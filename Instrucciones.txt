@@ -1,0 +1,29 @@
+Directivas: palabras claves en mayúsculas que se necesitan para que funcione el simulador
+
+
+Representación de datos
+
+EQU Word (32 bits -4 bytes) int
+DCB halfword (16 bits – 2bytes) x
+DCW byte (8 bits – 1 byte) char
+
+Etiquetas:
+palabras claves que identifican nombre de variables, hay dos tipos de datos o instrucción se ponen en la primera columna
+definir datos / constantes
+instrucciones / (bucles condicionales)
+ejemplos: but y fin
+
+Tipos de instrucciones
+Instrucciones aritmético – lógicas: trabajan con la ALU
+MOV: mueve el contenido de la memoria a otros registros
+EOR: es una OR exclusivo con 3 operandos, operación de la ALU = RD = Rn XOR Rn
+ADD: Suma rd. = Rn + Rn
+CMP no tiene registro destino hace comparaciones = Rn CMP Rn
+Acceso a memoria: carga y almacenamiento
+Instrucción de carga:
+LDR R destino [,]
+STR r fuente , [ ,]
+
+
+Control de flujo:
+Todas ellas son b y algo más, es decir fin b fin: es un salto condicional, un bucle infinito para

@@ -1,0 +1,2 @@
+Dependencies for Project 'p3Inserccion', Target 'Target 1': (DO NOT MODIFY !)
+F (.\p3.s)(0x661DA24D)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I "C:\Keil\ARM\INC" -I "C:\Keil\ARM\INC\Philips" --list "p3.lst" --xref -o "p3.o" --depend "p3.d")

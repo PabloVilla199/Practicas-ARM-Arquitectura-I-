@@ -1,0 +1,2 @@
+Dependencies for Project 'p3', Target 'Target 1': (DO NOT MODIFY !)
+F (..\P2\P2_2-20240211T194642Z-001\P2_2\practica2_2.s)(0x65F17B02)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I "C:\Keil\ARM\INC" -I "C:\Keil\ARM\INC\Philips" --list ".\practica2_2.lst" --xref -o ".\practica2_2.o" --depend ".\practica2_2.d")

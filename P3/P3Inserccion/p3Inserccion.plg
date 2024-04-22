@@ -1,0 +1,95 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\Pablo\Desktop\Ingenieria Informatica\Universidad\2023-2024\Segundo cuatrimestre\APUNTES_ARQUITECTURA\Practicas 2023 2024\P3\P3Inserccion\p3Inserccion.uvproj
+Project File Date:  03/23/2024
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling p3.s...
+p3.s(10): error: A1163E: Unknown opcode fin , expecting opcode or Macro
+p3.s:    10 0000001c  fin b fin
+p3.s:                 ^
+p3.s(26): error: A1163E: Unknown opcode finsub , expecting opcode or Macro
+p3.s:    26 00000050  finsub
+p3.s:                 ^
+p3.s(29): warning: A1313W: Missing END directive at end of file
+p3.s:    29 00000058 
+p3.s: 2 Errors, 1 Warning
+Target not created
+Build target 'Target 1'
+assembling p3.s...
+p3.s(10): error: A1163E: Unknown opcode fin , expecting opcode or Macro
+p3.s:    10 0000001c  fin b fin
+p3.s:                 ^
+p3.s(26): error: A1163E: Unknown opcode finsub , expecting opcode or Macro
+p3.s:    26 00000050  finsub
+p3.s:                 ^
+p3.s(31): error: A1163E: Unknown opcode pila , expecting opcode or Macro
+p3.s:    31 00000000  pila SPACE 100
+p3.s:                 ^
+p3.s(32): error: A1163E: Unknown opcode toppila , expecting opcode or Macro
+p3.s:    32 00000000  toppila
+p3.s:                 ^
+p3.s: 4 Errors, 0 Warnings
+Target not created
+Build target 'Target 1'
+assembling p3.s...
+p3.s(2): error: A1163E: Unknown opcode pila , expecting opcode or Macro
+p3.s:     2 00000000   pila SPACE 100
+p3.s:                  ^
+p3.s(3): error: A1163E: Unknown opcode toppila , expecting opcode or Macro
+p3.s:     3 00000000   toppila 
+p3.s:                  ^
+p3.s(13): error: A1163E: Unknown opcode fin , expecting opcode or Macro
+p3.s:    13 0000001c  fin b fin
+p3.s:                 ^
+p3.s(29): error: A1163E: Unknown opcode finsub , expecting opcode or Macro
+p3.s:    29 00000050  finsub
+p3.s:                 ^
+p3.s: 4 Errors, 0 Warnings
+Target not created
+Build target 'Target 1'
+assembling p3.s...
+p3.s(2): error: A1163E: Unknown opcode pila , expecting opcode or Macro
+p3.s:     2 00000000   pila SPACE 100
+p3.s:                  ^
+p3.s(3): error: A1163E: Unknown opcode toppila , expecting opcode or Macro
+p3.s:     3 00000000   toppila 
+p3.s:                  ^
+p3.s(13): error: A1163E: Unknown opcode fin , expecting opcode or Macro
+p3.s:    13 0000001c  fin b fin
+p3.s:                 ^
+p3.s(29): error: A1163E: Unknown opcode finsub , expecting opcode or Macro
+p3.s:    29 00000050  finsub
+p3.s:                 ^
+p3.s: 4 Errors, 0 Warnings
+Target not created
+Build target 'Target 1'
+assembling p3.s...
+p3.s(2): error: A1163E: Unknown opcode pila , expecting opcode or Macro
+p3.s:     2 00000000   pila SPACE 100
+p3.s:                  ^
+p3.s(3): error: A1163E: Unknown opcode toppila , expecting opcode or Macro
+p3.s:     3 00000000   toppila 
+p3.s:                  ^
+p3.s(13): error: A1163E: Unknown opcode fin , expecting opcode or Macro
+p3.s:    13 0000001c  fin b fin
+p3.s:                 ^
+p3.s: 3 Errors, 0 Warnings
+Target not created
+Build target 'Target 1'
+assembling p3.s...
+p3.s(2): error: A1163E: Unknown opcode pila , expecting opcode or Macro
+p3.s:     2 00000000   pila SPACE 100
+p3.s:                  ^
+p3.s(3): error: A1163E: Unknown opcode toppila , expecting opcode or Macro
+p3.s:     3 00000000   toppila 
+p3.s:                  ^
+p3.s(13): error: A1163E: Unknown opcode fin , expecting opcode or Macro
+p3.s:    13 0000001c  fin b fin
+p3.s:                 ^
+p3.s: 3 Errors, 0 Warnings
+Target not created

@@ -1,0 +1,17 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\Pablo\Desktop\Ingenieria Informatica\Universidad\2023-2024\Segundo cuatrimestre\APUNTES_ARQUITECTURA\P2\p2.uvproj
+Project File Date:  02/19/2024
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling practica1.s...
+..\Practicas\AOC1-P1\practica1.s(25): warning: A1313W: Missing END directive at end of file
+..\Practicas\AOC1-P1\practica1.s:    25 0000002c 
+..\Practicas\AOC1-P1\practica1.s: 0 Errors, 1 Warning
+linking...
+Program Size: Code=56 RO-data=0 RW-data=56 ZI-data=0  
+"p2.axf" - 0 Error(s), 1 Warning(s).

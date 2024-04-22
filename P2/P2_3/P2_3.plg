@@ -1,0 +1,95 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\Pablo\Desktop\Ingenieria Informatica\Universidad\2023-2024\Segundo cuatrimestre\APUNTES_ARQUITECTURA\Practicas 2023 2024\P2\P2_3\P2_3.uvproj
+Project File Date:  02/26/2024
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling practica1.s...
+..\..\..\Aoc-1\P1\practica1.s(2): error: A1163E: Unknown opcode pila , expecting opcode or Macro
+..\..\..\Aoc-1\P1\practica1.s:     2 00000000   pila SPACE 100
+..\..\..\Aoc-1\P1\practica1.s:                  ^
+..\..\..\Aoc-1\P1\practica1.s(3): error: A1163E: Unknown opcode toppila , expecting opcode or Macro
+..\..\..\Aoc-1\P1\practica1.s:     3 00000000   toppila
+..\..\..\Aoc-1\P1\practica1.s:                  ^
+..\..\..\Aoc-1\P1\practica1.s(17): error: A1163E: Unknown opcode fin , expecting opcode or Macro
+..\..\..\Aoc-1\P1\practica1.s:    17 0000001c  fin b fin
+..\..\..\Aoc-1\P1\practica1.s:                 ^
+..\..\..\Aoc-1\P1\practica1.s: 3 Errors, 0 Warnings
+Target not created
+Build target 'Target 1'
+assembling practica1.s...
+..\..\..\Aoc-1\P1\practica1.s(2): error: A1163E: Unknown opcode pila , expecting opcode or Macro
+..\..\..\Aoc-1\P1\practica1.s:     2 00000000   pila SPACE 100
+..\..\..\Aoc-1\P1\practica1.s:                  ^
+..\..\..\Aoc-1\P1\practica1.s(3): error: A1163E: Unknown opcode toppila , expecting opcode or Macro
+..\..\..\Aoc-1\P1\practica1.s:     3 00000000   toppila
+..\..\..\Aoc-1\P1\practica1.s:                  ^
+..\..\..\Aoc-1\P1\practica1.s(17): error: A1163E: Unknown opcode fin , expecting opcode or Macro
+..\..\..\Aoc-1\P1\practica1.s:    17 0000001c  fin b fin
+..\..\..\Aoc-1\P1\practica1.s:                 ^
+..\..\..\Aoc-1\P1\practica1.s: 3 Errors, 0 Warnings
+Target not created
+Build target 'Target 1'
+assembling practica1.s...
+..\..\..\Aoc-1\P1\practica1.s(2): error: A1163E: Unknown opcode pila , expecting opcode or Macro
+..\..\..\Aoc-1\P1\practica1.s:     2 00000000   pila SPACE 100
+..\..\..\Aoc-1\P1\practica1.s:                  ^
+..\..\..\Aoc-1\P1\practica1.s(3): error: A1163E: Unknown opcode toppila , expecting opcode or Macro
+..\..\..\Aoc-1\P1\practica1.s:     3 00000000   toppila
+..\..\..\Aoc-1\P1\practica1.s:                  ^
+..\..\..\Aoc-1\P1\practica1.s: 2 Errors, 0 Warnings
+Target not created
+Build target 'Target 1'
+assembling practica1.s...
+..\..\..\Aoc-1\P1\practica1.s(2): error: A1163E: Unknown opcode pilica , expecting opcode or Macro
+..\..\..\Aoc-1\P1\practica1.s:     2 00000000   pilica SPACE 100
+..\..\..\Aoc-1\P1\practica1.s:                  ^
+..\..\..\Aoc-1\P1\practica1.s(3): error: A1163E: Unknown opcode topila , expecting opcode or Macro
+..\..\..\Aoc-1\P1\practica1.s:     3 00000000   topila
+..\..\..\Aoc-1\P1\practica1.s:                  ^
+..\..\..\Aoc-1\P1\practica1.s: 2 Errors, 0 Warnings
+Target not created
+Build target 'Target 1'
+assembling practica1.s...
+..\..\..\Aoc-1\P1\practica1.s(2): error: A1163E: Unknown opcode pilica , expecting opcode or Macro
+..\..\..\Aoc-1\P1\practica1.s:     2 00000000   pilica SPACE 100
+..\..\..\Aoc-1\P1\practica1.s:                  ^
+..\..\..\Aoc-1\P1\practica1.s(3): error: A1163E: Unknown opcode topila , expecting opcode or Macro
+..\..\..\Aoc-1\P1\practica1.s:     3 00000000   topila
+..\..\..\Aoc-1\P1\practica1.s:                  ^
+..\..\..\Aoc-1\P1\practica1.s: 2 Errors, 0 Warnings
+Target not created
+Build target 'Target 1'
+assembling practica1.s...
+..\..\..\Aoc-1\P1\practica1.s(2): error: A1163E: Unknown opcode pilica , expecting opcode or Macro
+..\..\..\Aoc-1\P1\practica1.s:     2 00000000   pilica SPACE 102
+..\..\..\Aoc-1\P1\practica1.s:                  ^
+..\..\..\Aoc-1\P1\practica1.s(3): error: A1163E: Unknown opcode topila , expecting opcode or Macro
+..\..\..\Aoc-1\P1\practica1.s:     3 00000000   topila
+..\..\..\Aoc-1\P1\practica1.s:                  ^
+..\..\..\Aoc-1\P1\practica1.s: 2 Errors, 0 Warnings
+Target not created
+Build target 'Target 1'
+assembling practica1.s...
+..\..\..\Aoc-1\P1\practica1.s(2): error: A1163E: Unknown opcode pilica , expecting opcode or Macro
+..\..\..\Aoc-1\P1\practica1.s:     2 00000000   pilica SPACE 102
+..\..\..\Aoc-1\P1\practica1.s:                  ^
+..\..\..\Aoc-1\P1\practica1.s(3): error: A1163E: Unknown opcode topila , expecting opcode or Macro
+..\..\..\Aoc-1\P1\practica1.s:     3 00000000   topila
+..\..\..\Aoc-1\P1\practica1.s:                  ^
+..\..\..\Aoc-1\P1\practica1.s: 2 Errors, 0 Warnings
+Target not created
+Build target 'Target 1'
+assembling practica1.s...
+..\..\..\Aoc-1\P1\practica1.s(2): error: A1163E: Unknown opcode pilica , expecting opcode or Macro
+..\..\..\Aoc-1\P1\practica1.s:     2 00000000   pilica SPACE 102
+..\..\..\Aoc-1\P1\practica1.s:                  ^
+..\..\..\Aoc-1\P1\practica1.s(3): error: A1163E: Unknown opcode topila , expecting opcode or Macro
+..\..\..\Aoc-1\P1\practica1.s:     3 00000000   topila
+..\..\..\Aoc-1\P1\practica1.s:                  ^
+..\..\..\Aoc-1\P1\practica1.s: 2 Errors, 0 Warnings
+Target not created

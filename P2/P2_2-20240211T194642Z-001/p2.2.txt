@@ -1,0 +1,88 @@
+    AREA datos, DATA, READWRITE
+long    EQU 1024
+valor   EQU 512
+espacio SPACE 2048
+    AREA prog, CODE, READONLY
+
+    ENTRY
+	mov r0, #0
+	mov r1, #0
+
+	ldr r2, =espacio
+buc STRH r1, [r2, r0]
+	add r1, r1, #1
+	add r0, r0, #2
+	cmp r1, #long
+	bne buc
+
+	mov r8, #0
+	mov r9, #256
+	mov r10, #512
+	mov r11, #768
+buc2 LDRH r3, [r2, r8]
+  	 LDRH r4, [r2, r9]
+	 LDRH r5, [r2, r10]
+	 LDRH r6, [r2, r11]
+
+	 STRH r4, [r2, r8]
+ 	 STRH r5, [r2, r9]
+	 STRH r6, [r2, r10]
+	 STRH r3, [r2, r11]
+	 add r8, r8, #2
+	 add r9, r9, #2
+	 add r10, r10, #2
+	 add r11, r11, #2
+
+	 cmp r8, #valor
+	 bne buc2
+
+fin	b fin
+
+    END c2
+
+
+
+
+
+    AREA datos, DATA, READWRITE
+long    EQU 1024
+valor   EQU 512
+espacio SPACE 2048
+    AREA prog, CODE, READONLY
+
+    ENTRY
+	mov r0, #0
+	mov r1, #0
+
+    ldr r2, =espacio
+    add r3, r2 + #512  
+    add r4, r3 + #512  
+    add r5, r4 + #512   
+
+buc STRH r1, [r2, r0]
+	add r1, r1, #1
+	add r0, r0, #2
+	cmp r1, #long
+	bne buc
+   
+    mov r8, #0
+
+buc2 LDRH r6, [r2, r8]
+
+     LDRH r7, [r3, r8]
+     STRH r7, [r2, r8] 
+	  
+     LDRH r7, [r4, r8]
+     STRH r7, [r3, r8]  
+	   
+     LDRH r7, [r5, r8]  
+     STRH r7, [r4, r8] 
+ 
+     STRH r6, [r5, r8]  
+
+     add r8, r8, #2
+
+	 cmp r8, #valor
+	 bne buc2
+
+fin	b fin

@@ -1,0 +1,138 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\Pablo\Desktop\Ingenieria Informatica\Universidad\2023-2024\Segundo cuatrimestre\APUNTES_ARQUITECTURA\Practicas 2023 2024\P3\P3Inserccion\p3.uvproj
+Project File Date:  03/21/2024
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling p3.s...
+p3.s(1): error: A1163E: Unknown opcode datos, , expecting opcode or Macro
+p3.s:     1 00000000 AREA datos, DATA, READWRITE
+p3.s:                     ^
+p3.s(2): error: A1105E: Area directive missing
+p3.s:     2 00000000 vector1 DCD 4, 9, 2, 6, 1
+p3.s(2): warning: A1088W: Faking declaration of area AREA |$$$$$$$|
+p3.s:     2 00000000 vector1 DCD 4, 9, 2, 6, 1
+p3.s(17): error: A1106E: Missing comma
+p3.s:    17 0000000c buc1  ldr r3 [r2,r0]
+p3.s:                             ^
+p3.s(20): error: A1163E: Unknown opcode salto , expecting opcode or Macro
+p3.s:    20 00000014      salto buc2
+p3.s:                     ^
+p3.s(24): error: A1163E: Unknown opcode salto , expecting opcode or Macro
+p3.s:    24 0000001c      salto buc2
+p3.s:                     ^
+p3.s(37): warning: A1313W: Missing END directive at end of file
+p3.s:    37 00000034 
+p3.s: 5 Errors, 2 Warnings
+Target not created
+Build target 'Target 1'
+assembling p3.s...
+p3.s(1): error: A1163E: Unknown opcode datos, , expecting opcode or Macro
+p3.s:     1 00000000 AREA datos, DATA, READWRITE
+p3.s:                     ^
+p3.s(2): error: A1105E: Area directive missing
+p3.s:     2 00000000 vector1 DCD 4, 9, 2, 6, 1
+p3.s(2): warning: A1088W: Faking declaration of area AREA |$$$$$$$|
+p3.s:     2 00000000 vector1 DCD 4, 9, 2, 6, 1
+p3.s(17): error: A1106E: Missing comma
+p3.s:    17 0000000c buc1  ldr r3 [r2,r0]
+p3.s:                             ^
+p3.s: 3 Errors, 1 Warning
+Target not created
+Build target 'Target 1'
+assembling p3.s...
+p3.s(1): error: A1163E: Unknown opcode datos, , expecting opcode or Macro
+p3.s:     1 00000000 AREA datos, DATA, READWRITE
+p3.s:                     ^
+p3.s(2): error: A1105E: Area directive missing
+p3.s:     2 00000000 vector1 DCD 4, 9, 2, 6, 1
+p3.s(2): warning: A1088W: Faking declaration of area AREA |$$$$$$$|
+p3.s:     2 00000000 vector1 DCD 4, 9, 2, 6, 1
+p3.s(17): error: A1106E: Missing comma
+p3.s:    17 0000000c buc1  ldr r3 [r2,r0]
+p3.s:                             ^
+p3.s: 3 Errors, 1 Warning
+Target not created
+Build target 'Target 1'
+assembling p3.s...
+p3.s(1): error: A1163E: Unknown opcode datos, , expecting opcode or Macro
+p3.s:     1 00000000 AREA datos, DATA, READWRITE
+p3.s:                     ^
+p3.s(2): error: A1105E: Area directive missing
+p3.s:     2 00000000 vector1 DCD 4, 9, 2, 6, 1
+p3.s(2): warning: A1088W: Faking declaration of area AREA |$$$$$$$|
+p3.s:     2 00000000 vector1 DCD 4, 9, 2, 6, 1
+p3.s(17): error: A1106E: Missing comma
+p3.s:    17 0000000c buc1  ldr r3 [r2,r0]
+p3.s:                             ^
+p3.s: 3 Errors, 1 Warning
+Target not created
+Build target 'Target 1'
+assembling p3.s...
+linking...
+Program Size: Code=68 RO-data=0 RW-data=20 ZI-data=0  
+"p3.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling p3.s...
+linking...
+Program Size: Code=68 RO-data=0 RW-data=20 ZI-data=0  
+"p3.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling p3.s...
+linking...
+Program Size: Code=68 RO-data=0 RW-data=20 ZI-data=0  
+"p3.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling p3.s...
+p3.s(19): error: A1163E: Unknown opcode buc3 , expecting opcode or Macro
+p3.s:    19 00000018   buc3 add r4, r1, #4
+p3.s:                  ^
+p3.s: 1 Error, 0 Warnings
+Target not created
+Build target 'Target 1'
+assembling p3.s...
+p3.s(19): error: A1163E: Unknown opcode buc3 , expecting opcode or Macro
+p3.s:    19 00000018   buc3 add r4, r1, #4
+p3.s:                  ^
+p3.s: 1 Error, 0 Warnings
+Target not created
+Build target 'Target 1'
+assembling p3.s...
+p3.s(19): error: A1163E: Unknown opcode buc3 , expecting opcode or Macro
+p3.s:    19 00000018  buc3  add r4, r1, #4
+p3.s:                 ^
+p3.s: 1 Error, 0 Warnings
+Target not created
+Build target 'Target 1'
+assembling p3.s...
+p3.s(19): error: A1163E: Unknown opcode buc3 , expecting opcode or Macro
+p3.s:    19 00000018  buc3  add r4, r1, #4
+p3.s:                 ^
+p3.s: 1 Error, 0 Warnings
+Target not created
+Build target 'Target 1'
+assembling p3.s...
+linking...
+Program Size: Code=84 RO-data=0 RW-data=20 ZI-data=0  
+"p3.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling p3.s...
+linking...
+Program Size: Code=84 RO-data=0 RW-data=20 ZI-data=0  
+"p3.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+assembling p3.s...
+p3.s(9): error: A1163E: Unknown opcode ins , expecting opcode or Macro
+p3.s:     9 00000000  ins  ldr r3, =vector2
+p3.s:                 ^
+p3.s: 1 Error, 0 Warnings
+Target not created
+Build target 'Target 1'
+assembling p3.s...
+linking...
+Program Size: Code=96 RO-data=0 RW-data=20 ZI-data=0  
+"p3.axf" - 0 Error(s), 0 Warning(s).

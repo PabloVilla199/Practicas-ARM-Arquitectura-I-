@@ -1,0 +1,31 @@
+    AREA datos, DATA, READWRITE
+trad DCB "CDE+ =", 0xFF, 0xFF, "6789AB", 0xFF, 0xFF, "012345" 
+	ALIGN
+serie DCB 0x0D, 0x0D, 0x04, 0x03, 0x04, 0x11, 0x15, 0x04, 0x05, 0x04, 0x01, 0x11, 0xFF
+	ALIGN
+resul SPACE 13
+	ALIGN
+
+    AREA prog, CODE, READONLY
+
+    ENTRY
+	ldr r1, =resul
+   	ldr r2, =serie
+	ldr r5, =trad
+	mov r3, #0	 
+
+buc LDRB r6, [r2,r3]
+   	cmp r6, #0xFF
+	beq final           
+	LDRB r4, [r5,r6] 
+	STRB r4, [r1,r3]
+	add r3, r3, #1
+	cmp r6, #0xFF
+	bne buc
+
+final 
+   STR r6[ r1,r3]
+
+fin	b fin
+ 
+    END 

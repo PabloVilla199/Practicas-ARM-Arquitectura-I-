@@ -1,0 +1,4 @@
+--cpu ARM7TDMI "p3.o" --strict --scatter "..\..\P2\P2_2-20240211T194642Z-001\P2_2\practica2_2.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\p3.map" -o "p3.axf"

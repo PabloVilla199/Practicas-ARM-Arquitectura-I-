@@ -1,0 +1,40 @@
+Declaracion 
+
+pila SPACE (num_words)
+topila 
+
+
+ldr sp ,= topila 
+
+
+Primer acceso en la direccion mas baja pila de direccion descendente de 0xFFFFF a 0x0000
+– La pila crece hacia direcciones menores en la memoria
+
+
+
+el sp puntero del ultimo dato introducido 
+
+los indices de registros mas bajos se almacenan  en la direccion mas baja 
+Ejemplo:  
+        r4
+	r1 
+	ro
+
+
+Cuando se usa la pila se usa ! para actualizar el registro base de la pila  el registro sp r13 se actualiza con el topila actual 
+
+
+STMFB{ }^ restuarar los registros en modo usuario permite retornar a modo usuario
+
+
+
+IA -> incrementa despues 
+I
+
+
+sp 13 
+lr 14 
+pc 15
+
+
+

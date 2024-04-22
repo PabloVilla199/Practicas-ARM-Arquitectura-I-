@@ -1,0 +1,18 @@
+	mov r7, #0
+	mov r8, #0
+	mov r9, #256
+	mov r10, #512
+	mov r11, #768
+buc2   LDRH r3, [r7, r8]
+  	 LDRH r4, [r7, r9]
+	 LDRH r5, [r7, r10]
+	 LDRH r6, [r7, r11]
+
+	 STRH r4, [r7, r8]
+ 	 STRH r5, [r7, r9]
+	 STRH r6, [r7, r10]
+	 STRH r3, [r7, r11]
+	 add r7, r7, #2
+
+	 cmp r7, #valor
+	 bne buc2

@@ -1,0 +1,17 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\Pablo\Desktop\Ingenieria Informatica\Universidad\2023-2024\Segundo cuatrimestre\APUNTES_ARQUITECTURA\Practicas 2023 2024\P5\P5.uvproj
+Project File Date:  04/19/2024
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling p5.s...
+p5.s(92): warning: A1608W: MOV pc,<rn> instruction used, but BX <rn> is preferred
+p5.s:    92 000000d4     mov pc,lr
+p5.s: 0 Errors, 1 Warning
+linking...
+Program Size: Code=224 RO-data=0 RW-data=88 ZI-data=0  
+"P5.axf" - 0 Error(s), 1 Warning(s).

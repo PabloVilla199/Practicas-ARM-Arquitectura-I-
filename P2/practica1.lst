@@ -1,0 +1,127 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             datos, DATA, READWRITE
+    2 00000000 43 44 45 
+              2B 20 3D 
+              FF FF 36 
+              37 38 39 
+              41 42 FF 
+              FF 30 31 
+              32 33 34 
+              35       trad    DCB              "CDE+ =", 0xFF, 0xFF, "6789AB",
+ 0xFF, 0xFF, "012345"
+    3 00000016 00 00           ALIGN
+    4 00000018 0D 0D 04 
+              03 04 11 
+              15 04 05 
+              04 01 11 
+              FF       serie   DCB              0x0D, 0x0D, 0x04, 0x03, 0x04, 0
+x11, 0x15, 0x04, 0x05, 0x04, 0x01, 0x11, 0xFF
+    5 00000025 00 00 00        ALIGN
+    6 00000028 00 00 00 
+              00 00 00 
+              00 00 00 
+              00 00 00 
+              00       resul   SPACE            13
+    7 00000035 00 00 00        ALIGN
+    8 00000038         
+    9 00000038                 AREA             prog, CODE, READONLY
+   10 00000000         
+   11 00000000                 ENTRY
+   12 00000000 E59F1024        ldr              r1, =resul
+   13 00000004 E59F2024        ldr              r2, =serie
+   14 00000008 E59F5024        ldr              r5, =trad
+   15 0000000C E3A03000        mov              r3, #0
+   16 00000010         
+   17 00000010 E7D26003 
+                       buc     LDRB             r6, [r2,r3]
+   18 00000014 E7D54006        LDRB             r4, [r5,r6]
+   19 00000018 E7C14003        STRB             r4, [r1,r3]
+   20 0000001C E2833001        add              r3, r3, #1
+   21 00000020 E35600FF        cmp              r6, #0xFF
+   22 00000024 1AFFFFF9        bne              buc
+   23 00000028         
+   24 00000028 EAFFFFFE 
+                       fin     b                fin
+                       
+              00000000 
+              00000000 
+              00000000 
+Command Line: --debug --xref --apcs=interwork --depend=.\practica1.d -o.\practi
+ca1.o -IC:\Keil\ARM\INC -IC:\Keil\ARM\INC\Philips --predefine="__EVAL SETA 1" -
+-list=.\practica1.lst ..\Practicas\AOC1-P1\practica1.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+datos 00000000
+
+Symbol: datos
+   Definitions
+      At line 1 in file ..\Practicas\AOC1-P1\practica1.s
+   Uses
+      None
+Comment: datos unused
+resul 00000028
+
+Symbol: resul
+   Definitions
+      At line 6 in file ..\Practicas\AOC1-P1\practica1.s
+   Uses
+      At line 12 in file ..\Practicas\AOC1-P1\practica1.s
+Comment: resul used once
+serie 00000018
+
+Symbol: serie
+   Definitions
+      At line 4 in file ..\Practicas\AOC1-P1\practica1.s
+   Uses
+      At line 13 in file ..\Practicas\AOC1-P1\practica1.s
+Comment: serie used once
+trad 00000000
+
+Symbol: trad
+   Definitions
+      At line 2 in file ..\Practicas\AOC1-P1\practica1.s
+   Uses
+      At line 14 in file ..\Practicas\AOC1-P1\practica1.s
+Comment: trad used once
+4 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+buc 00000010
+
+Symbol: buc
+   Definitions
+      At line 17 in file ..\Practicas\AOC1-P1\practica1.s
+   Uses
+      At line 22 in file ..\Practicas\AOC1-P1\practica1.s
+Comment: buc used once
+fin 00000028
+
+Symbol: fin
+   Definitions
+      At line 24 in file ..\Practicas\AOC1-P1\practica1.s
+   Uses
+      At line 24 in file ..\Practicas\AOC1-P1\practica1.s
+Comment: fin used once
+prog 00000000
+
+Symbol: prog
+   Definitions
+      At line 9 in file ..\Practicas\AOC1-P1\practica1.s
+   Uses
+      None
+Comment: prog unused
+3 symbols
+333 symbols in table

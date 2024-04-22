@@ -1,0 +1,39 @@
+/* Ordenación tabla T de N elementos: T[0],T[1],...,T[N-1] 
+ * aplicando el método quicksort */ 
+
+
+void ordena(int *T,int n) { 
+
+ qsort(0,n-1); 
+} 
+void qsort(int *T,int izquierda,int derecha) { 
+   int i,j,pivote,temporal; 
+
+   i=izquierda;
+   j=derecha;
+   pivote=T[(izquierda + derecha)/2];
+ 
+   do { 
+ 	 while (pivote > T[i]) {
+	       i=i+1;
+	 }
+ 	 while (T[j] > pivote) { 
+	        j=j-1;
+	 } 
+ 	 if (i <= j) { 
+ 	     temporal=T[i];
+	     T[i]=T[j];
+	     T[j]=temporal; 
+
+ 	     i=i+1;
+	     j=j-1; 
+ 	 } 
+  } while (i<=j); 
+
+  if (j > izquierda) { 
+      qsort(izquierda,j); 
+  }
+  if (derecha > i) {
+      qsort(i,derecha); 
+  }
+}

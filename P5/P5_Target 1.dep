@@ -1,0 +1,2 @@
+Dependencies for Project 'P5', Target 'Target 1': (DO NOT MODIFY !)
+F (.\p5.s)(0x6626128E)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I "C:\Keil\ARM\INC" -I "C:\Keil\ARM\INC\Philips" --list "p5.lst" --xref -o "p5.o" --depend "p5.d")

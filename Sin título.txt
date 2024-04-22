@@ -1,0 +1,38 @@
+	 
+ ldr r3, =vector2
+
+	 mov r0, #4
+	 mov r1, #0
+	 mov r2, #0
+	 mov r4, #0
+	 mov r5, #0
+	 
+buc3 ldr r2, [r3, r0] 
+	 sub r1, r0, #4
+
+	 b test
+
+buc4 add r4, r1, #4
+	 str r5, [r3, r4]
+
+	 sub r1, r1, #4
+
+test cmp r1, #0
+	 blt skip3
+
+	 ldr r5, [r3, r1]
+	 cmp r5, r2
+	 bgt buc4
+
+	 
+
+skip3 add r4, r1, #4
+	  str r2, [r3, r4]
+
+	 add r0, r0, #4
+	 cmp r0, #long2
+	 blt buc3
+
+fin	b fin
+
+    END 

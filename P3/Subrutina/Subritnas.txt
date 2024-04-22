@@ -1,0 +1,73 @@
+    AREA datos, DATA, READWRITE
+vector  DCD  7,8,3,4,5,1
+long    EQU 6
+vector2 DCD 4, 9, 2, 6, 1
+long2   EQU 5
+
+    AREA prog, CODE, READONLY
+    ENTRY
+	ldr r0, = vector 
+	mov r10,#long
+	bl sbr_burbuja
+
+	ldr r3, = vector2
+	mov r10, #long2
+	bl sbr_inserccion
+
+fin     B fin
+
+sbr_burbuja
+
+        mov     r1, #1         
+buc_i   mov     r2, #0     
+      
+buc     ldr    r3, [r0, r1,lsl #2]   
+        ldr    r4, [r0, r2,lsl #2]  
+  
+        cmp     r3, r4         
+        bge     noCambiar       
+
+        str    r4, [r0, r1,lsl #2]    
+        str    r3, [r0, r2,lsl #2]    
+
+noCambiar
+        add     r2, r2, #1     
+        cmp     r2,r1      
+        blt     buc           
+
+        add     r1, r1, #1      
+        cmp     r1, r10    
+        blt     buc_i
+	    mov pc, lr
+
+           
+sbr_inserccion
+ 	 mov r0, #1
+	 mov r1, #0
+	 
+buc1 ldr r2, [r3, r0, lsl #2] 
+	 sub r1, r0, #1
+
+	 b comp
+
+buc2 add r4, r1, #1
+	 str r5, [r3, r4, lsl #2]
+
+	 sub r1, r1, #1
+
+comp cmp r1, #0
+	 blt buc3
+
+	 ldr r5, [r3, r1, lsl #2]
+	 cmp r5, r2
+	 bgt buc2
+
+buc3 add r4, r1, #1
+	 str r2, [r3, r4, lsl #2]
+
+	 add r0, r0, #1
+	 cmp r0, r10
+	 blt buc1
+	 mov pc, lr               
+
+    END

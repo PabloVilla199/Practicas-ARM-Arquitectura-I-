@@ -1,0 +1,76 @@
+    AREA datos, DATA, READWRITE
+vector   DCD 7,8,3,4,5,1
+long    EQU 6
+
+    AREA prog, CODE, READONLY
+
+    ENTRY
+
+        ldr     r0, =vector  
+        mov     r1, #4          
+buc_i   mov     r2, #0     
+      
+buc     ldr    r3, [r0, r1]   
+        ldr    r4, [r0, r2]  
+  
+        cmp     r3, r4         
+        bge     noCambiar       
+
+        str    r4, [r0, r1]    
+        str    r3, [r0, r2]    
+
+noCambiar
+        add     r2, r2, #4     
+        cmp     r2,r1      
+        blt     buc           
+
+        add     r1, r1, #4      
+        cmp     r1, #long      
+        blt     buc_i           
+
+fin     B fin                
+
+    END
+
+
+Version 2 Bublesort 
+
+
+    AREA datos, DATA, READWRITE
+vector   DCD 7,8,3,4,5,1
+long    EQU 24
+
+    AREA prog, CODE, READONLY
+
+    ENTRY
+
+        ldr     r0, =vector  
+        mov     r1, #1         
+buc_i   mov     r2, #0     
+      
+buc     ldr    r3, [r0, r1,lsl #2]   
+        ldr    r4, [r0, r2,lsl #2]  
+  
+        cmp     r3, r4         
+        bge     noCambiar       
+
+        str    r4, [r0, r1,lsl #2]    
+        str    r3, [r0, r2,lsl #2]    
+
+noCambiar
+        add     r2, r2, #1     
+        cmp     r2,r1      
+        blt     buc           
+
+        add     r1, r1, #1      
+        cmp     r1, #long      
+        blt     buc_i           
+
+fin     B fin                
+
+    END
+
+
+
+
+

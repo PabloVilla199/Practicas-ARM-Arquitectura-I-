@@ -1,0 +1,87 @@
+ARM Linker, 4.1 [Build 561] [Evaluation]
+
+==============================================================================
+
+Section Cross References
+
+    practica2_2.o(prog) refers to practica2_2.o(datos) for toPila
+
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    practica2_2.s                            0x00000000   Number         0  practica2_2.o ABSOLUTE
+    prog                                     0x00400000   Section      284  practica2_2.o(prog)
+    datos                                    0x0040011c   Section      100  practica2_2.o(datos)
+    vector                                   0x0040011c   Data          24  practica2_2.o(datos)
+    contarA                                  0x00400134   Data           4  practica2_2.o(datos)
+    vector2                                  0x00400138   Data          20  practica2_2.o(datos)
+    contarB                                  0x0040014c   Data           4  practica2_2.o(datos)
+    toPila                                   0x00400180   Data           0  practica2_2.o(datos)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv1$ARM_ISAv4$S$PE$A:L22$X:L11$S22$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$STANDARDLIB$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x00400000
+
+  Load Region LR_IRAM1 (Base: 0x00400000, Size: 0x00000180, Max: 0x00100000, ABSOLUTE)
+
+    Execution Region ER_IRAM1 (Base: 0x00400000, Size: 0x00000180, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00400000   0x0000011c   Code   RO            2  * prog                practica2_2.o
+    0x0040011c   0x00000064   Data   RW            1    datos               practica2_2.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       284         20          0        100          0        396   practica2_2.o
+
+    ----------------------------------------------------------------------
+       284         20          0        100          0        396   Object Totals
+         0          0          0          0          0          0   (incl. Generated)
+         0          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+         0          0          0          0          0          0   Library Totals
+         0          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+       284         20          0        100          0        396   Grand Totals
+       284         20          0        100          0        396   ELF Image Totals
+       284         20          0        100          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                  284 (   0.28kB)
+    Total RW  Size (RW Data + ZI Data)               100 (   0.10kB)
+    Total ROM Size (Code + RO Data + RW Data)        384 (   0.38kB)
+
+==============================================================================
+

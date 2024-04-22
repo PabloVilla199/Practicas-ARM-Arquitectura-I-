@@ -1,0 +1,19 @@
+*** Creating Trace Output File 'p3Inserccion.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"p3.o"'
+### ADS-LD Command completed:
+--cpu ARM7TDMI "p3.o" --strict --scatter "..\..\P2\P2_2-20240211T194642Z-001\P2_2\practica2_2.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\p3Inserccion.map" -o "p3Inserccion.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'p3Inserccion.axf'
+### ADS-LD Command File: 'p3Inserccion.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'p3Inserccion.lnp', Handle=0x0000096C
+### Writing '.lnp' file
+### ADS-LD Command file 'p3Inserccion.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

@@ -1,0 +1,14 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Users\Pablo\Desktop\Ingenieria Informatica\Universidad\2023-2024\Segundo cuatrimestre\APUNTES_ARQUITECTURA\Practicas 2023 2024\P3\p3.uvproj
+Project File Date:  03/12/2024
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling practica2_2.s...
+linking...
+Program Size: Code=68 RO-data=0 RW-data=24 ZI-data=0  
+"p3.axf" - 0 Error(s), 0 Warning(s).

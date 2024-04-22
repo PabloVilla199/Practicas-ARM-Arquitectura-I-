@@ -1,0 +1,87 @@
+ARM Linker, 4.1 [Build 561] [Evaluation]
+
+==============================================================================
+
+Section Cross References
+
+    practica1.o(prog) refers to practica1.o(datos) for byte
+
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    ..\..\..\Aoc-1\P1\practica1.s            0x00000000   Number         0  practica1.o ABSOLUTE
+    prog                                     0x00400000   Section      144  practica1.o(prog)
+    datos                                    0x00400090   Section       28  practica1.o(datos)
+    byte                                     0x00400090   Data           4  practica1.o(datos)
+    half                                     0x00400094   Data           8  practica1.o(datos)
+    resulbyte                                0x004000a0   Data           1  practica1.o(datos)
+    resulhalf                                0x004000a4   Data           2  practica1.o(datos)
+    resulword                                0x004000a8   Data           4  practica1.o(datos)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv1$ARM_ISAv4$S$PE$A:L22$X:L11$S22$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$STANDARDLIB$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x00400000
+
+  Load Region LR_IRAM1 (Base: 0x00400000, Size: 0x000000ac, Max: 0x00100000, ABSOLUTE)
+
+    Execution Region ER_IRAM1 (Base: 0x00400000, Size: 0x000000ac, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00400000   0x00000090   Code   RO            2  * prog                practica1.o
+    0x00400090   0x0000001c   Data   RW            1    datos               practica1.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       144         20          0         28          0        368   practica1.o
+
+    ----------------------------------------------------------------------
+       144         20          0         28          0        368   Object Totals
+         0          0          0          0          0          0   (incl. Generated)
+         0          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+         0          0          0          0          0          0   Library Totals
+         0          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+       144         20          0         28          0        368   Grand Totals
+       144         20          0         28          0        368   ELF Image Totals
+       144         20          0         28          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                  144 (   0.14kB)
+    Total RW  Size (RW Data + ZI Data)                28 (   0.03kB)
+    Total ROM Size (Code + RO Data + RW Data)        172 (   0.17kB)
+
+==============================================================================
+
